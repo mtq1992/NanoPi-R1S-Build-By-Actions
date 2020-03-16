@@ -54,7 +54,7 @@ jobs:
           cd friendlywrt-h5
           cd .repo/manifests
           rm -f ./h5.xml
-          wget https://raw.githubusercontent.com/skytotwo/NanoPi-R1S-Build-By-Actions/master/source_xml/h5_19.07.xml
+          wget https://raw.githubusercontent.com/mtq1992/NanoPi-R1S-Build-By-Actions/master/source_xml/h5_19.07.xml
           cp h5_19.07.xml h5.xml
           rm -rf ./h5_19.07.xml
           repo sync -c  --no-clone-bundle
@@ -88,7 +88,7 @@ jobs:
         run: |
           cd friendlywrt-h5/friendlywrt
           rm -f ./.config*
-          wget https://raw.githubusercontent.com/skytotwo/NanoPi-R1S-Build-By-Actions/master/r1s-h5-config
+          wget https://raw.githubusercontent.com/mtq1992/NanoPi-R1S-Build-By-Actions/master/r1s-h5-config
           cp r1s-h5-config .config
       
       - name: Download package
